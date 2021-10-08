@@ -1,0 +1,25 @@
+<style></style>
+<div class="content" role="main">
+  <h4>{{ title }} app is running!</h4>
+  <div class="container">
+    <div class="inputContainer">
+      <div class="firstInput">
+        <input id="1" placeholder="First number" #input1 />
+        <span class="error" *ngIf="inputValue1.value && !inputValue1.isValid"
+          >Invalid number</span
+        >
+      </div>
+      <div class="spacer"></div>
+      <div class="secondInput">
+        <input id="2" placeholder="Second number" #input2 />
+        <span class="error" *ngIf="inputValue2.value && !inputValue2.isValid"
+          >Invalid number</span
+        >
+      </div>
+    </div>
+    <div class="equalOperator"></div>
+    <div class="resultContainer">
+      <span class="result">{{ result }}</span>
+    </div>
+  </div>
+</div>
